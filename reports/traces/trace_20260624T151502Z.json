@@ -1,0 +1,70 @@
+[
+  {
+    "name": "supervisor_route",
+    "started_at": "2026-06-24T15:14:40.695596+00:00",
+    "attributes": {
+      "next": "researcher",
+      "reason": "no research notes yet"
+    },
+    "duration_seconds": 0.0002114000089932233
+  },
+  {
+    "name": "researcher_run",
+    "started_at": "2026-06-24T15:14:40.708156+00:00",
+    "attributes": {
+      "query": "Research GraphRAG state-of-the-art and write a 500-word summary",
+      "sources_count": 5,
+      "notes_length": 4452,
+      "cost_usd": 0.0009204
+    },
+    "duration_seconds": 6.990431999991415
+  },
+  {
+    "name": "supervisor_route",
+    "started_at": "2026-06-24T15:14:47.697082+00:00",
+    "attributes": {
+      "next": "analyst",
+      "reason": "LLM decided (197 tokens)"
+    },
+    "duration_seconds": 0.5498420000076294
+  },
+  {
+    "name": "analyst_run",
+    "started_at": "2026-06-24T15:14:48.249733+00:00",
+    "attributes": {
+      "notes_length": 4452,
+      "analysis_length": 4289,
+      "cost_usd": 0.0007468
+    },
+    "duration_seconds": 5.71317140001338
+  },
+  {
+    "name": "supervisor_route",
+    "started_at": "2026-06-24T15:14:53.964051+00:00",
+    "attributes": {
+      "next": "writer",
+      "reason": "LLM decided (201 tokens)"
+    },
+    "duration_seconds": 0.5963543000107165
+  },
+  {
+    "name": "writer_run",
+    "started_at": "2026-06-24T15:14:54.561808+00:00",
+    "attributes": {
+      "query": "Research GraphRAG state-of-the-art and write a 500-word summary",
+      "answer_length": 5834,
+      "word_count": 694,
+      "cost_usd": 0.0011688
+    },
+    "duration_seconds": 7.628692199999932
+  },
+  {
+    "name": "supervisor_route",
+    "started_at": "2026-06-24T15:15:02.189165+00:00",
+    "attributes": {
+      "next": "done",
+      "reason": "final answer exists"
+    },
+    "duration_seconds": 0.0002072999777738005
+  }
+]
